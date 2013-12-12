@@ -8,7 +8,7 @@
 *{
 	font-family: 'Patrick Hand', cursive;
 	font-weight:normal;
-	font-size: 15px;
+	font-size: 100%;
 	color: black;
 }
 
@@ -16,59 +16,59 @@
 	border: 1px dotted #a7d043;
 }
 
+.needOfBorder2{
+	border: 1px dotted red;
+}
+
 .hide{
 	display: none;
 }
 
-/*Navigation*/
-
-#flyNavigatorFly{
-	top: 10px;
-	position: absolute;
-	padding: 10px 0px;
-	padding-left: 50px;
-	width: 948px;
-	background-color: #e7ffb3;
-	z-index: 999;
+.leftFloat{
+	float: left;
 }
 
-#flyNavigatorFly a{
+/*Navigation*/
+
+#navigator{
+	top: 20px;
+	margin: 20px auto;
+	width:80%;
+	background-color: #e7ffb3;
+}
+
+#navigator a{
 	margin: 0px 20px;
 	text-decoration: none;
 	font-family: 'Ubuntu', sans-serif;
 	text-transform: uppercase;
-    font-size: 20px;
     color: #675b5b;
     font-weight: 900;
 }
 
-#flyNavigatorFly div{
-	float: right;
-	font-size: 13px;
+#navigator div{
 	margin-right: 20px;
 }
 
-.navi{
-	color: #a7d043;
-	font-weight: 1000;
+#navigator #logo{
+	
 }
 
 /*Section*/
 
 section{
-	margin-top: 80px;
-	width: 1000px;
-	background-color: white;
+	margin: 20px auto;
+	width: 80%;
+	background-color: gainsboro;
+	min-height:100px;
 }
 
 h1{
-	font-size: 20px;
 	margin: 5px;
 	margin-bottom: 20px;
 }
 
 h2{
-	font-size: 18px;
 	margin-left: 20px;
 	margin-bottom: 10px;
 }
@@ -78,48 +78,21 @@ p{
 	clear: both;
 }
 
-img{
-	margin:5px;
+
+/*Section parting*/
+.sectionParting{
+	width: 49%;
+	margin:auto;
+	margin-left: 0.5%;
 }
 
-mark{
-	background-color: rgba(215,80,84,0.3)
-}
-
-/*Sides table*/
-
-table{
-	width: 990px;
-	border-collapse: collapse;
-	margin: 5px 5px;
-}
-
-table td, tr{
-	border: 2px dashed rgba(75,140,29,0.3);
-}
-
-.newInfoTable{
-	border: 2px dashed rgba(255,189,117,0.7);
-}
-
-table td{
-	padding: 10px 10px 10px 20px;
-}
-
-.codePart{
-	width: 400px;
-}
 
 /* Footer */
 
 footer{
-	margin-top: 10px;
-	bottom: 10px;
-	padding: 10px 0px;
-	padding-left: 50px;
-	width: 948px;
+	margin: 10px auto;
+	width: 80%;
 	background-color: #e7ffb3;
-	z-index: 999;
 }
 
 footer a{
@@ -130,62 +103,10 @@ footer a:hover{
 	text-decoration:underline;
 }
 
-/*HTML side*/
-#canvaExample{
-	border: 1px solid #a3a3a3;
-}
-
-/*CSS side*/
-
-/***CUBE***/
-.cube {
-	position: relative;
-	width: 200px;
-	height: 130px;
-	margin-top: 100px;
-}
-
-.rightFace, .leftFace, .topFace div {
-	padding: 5px;
-	width: 90px;
-	height: 90px;
-}
-
-.rightFace, .leftFace, .topFace {
-	position: absolute;
-}
-
-.leftFace {
-	-webkit-transform: skewY(30deg);
-	-moz-transform: skewY(30deg);
-	background-color: #506f0c;
-}
-
-.rightFace {
-	-webkit-transform: skewY(-30deg);
-	-moz-transform: skewY(-30deg);
-	background-color: #6b9410;
-	left: 100px;
-}
-
-.topFace div {
-	-webkit-transform: skewY(-30deg) scaleY(1.16);
-	-moz-transform: skewY(-30deg) scaleY(1.16);
-	background-color: #83b611;
-	font-size: 0.862em;
-}
-
-.topFace {
-	-webkit-transform: rotate(60deg);
-	-moz-transform: rotate(60deg);
-	top: -79px;
-	left: 50px;
-}
 
 /*JavaScript side*/
 
 button{
-	font-size: 10px;
 	margin: 10px 0px;
 	font-weight: normal;
 }
@@ -194,7 +115,6 @@ button{
 	width: 200px;
 	height: 50px;
 	color: white;
-	font-size: 15px;
 	font-weight: 900;
 	text-transform: uppercase;
 	border: none;
@@ -238,6 +158,5 @@ button:hover{
 #copyright td, tr{
 	color:YellowGreen;
 	padding:0px;
-	font-size:13px;
 	border-style: none;
 	}
