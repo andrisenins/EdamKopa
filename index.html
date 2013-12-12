@@ -1,0 +1,134 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<title>Training</title>
+	<link rel="stylesheet" href="css/style.css">
+	<script type="text/javascript" src="js/js.js"></script> <!-- page navigation functions -->
+	<script type="text/javascript" src="js/training.js"></script> <!-- all small functions -->
+	<script type="text/javascript" src="js/jquery-1.7.2.min.js"></script> <!-- Library -->
+	<script type="text/javascript" src="js/raphael-library.js"></script> <!-- Raphael library -->
+	<script type="text/javascript" src="js/jquery_dimensions.js"></script> <!-- For 3d effect in CSS -->
+	<script type="text/javascript" src="js/easeljs-0.5.0.min.js"></script> <!-- Createrjs Easeljs library -->
+    <script type="text/javascript" src="js/onloadjs.js"></script> <!-- Window.onload function -->
+</head>
+
+<body>
+
+<nav id="flyNavigatorFly" class="needOfBorder">
+	<a href="#one" id="one" onclick="openmenu('one');return false;"><span class="navi">|</span> HTML <span class="navi">|</span></a>
+	<a href="#two" id="two" onclick="openmenu('two');return false;"><span class="navi">|</span> CSS <span class="navi">|</span></a>
+	<a href="#three" id="three" onclick="openmenu('three');return false;"><span class="navi">|</span> JavaScript <span class="navi">|</span></a>
+	<div>Adapted for Chrome (for other browsers could be defected) <span class="navi">|</span> Updated 19.09.13 </div>
+</nav>
+
+<section>
+
+	<div  id="sec_one" class="needOfBorder">
+		 <h1>This is HTML training part</h1>
+		 
+		 <table id="htmlTable">
+		 	<tr> <!-- Semantics -->
+		 		<td class="codePart">
+			 		<h2>New Semantics in HTML5.</h2>
+					<p>
+					In place to write div elements with id of semantic element names, write semantic element names.<br>
+					It has no real functionality, reason is for code easy-reading.<br>
+					In HTML5 all tags should be closed.<br>
+					Find all list of new tag elements <a href="http://www.w3schools.com/html/html5_new_elements.asp">in w3schools webpage</a>
+					</p>
+		 		</td>
+		 		<td class="showPart">
+					<img src="http://www.w3schools.com/html/img_sem_elements.gif" alt="semantic table">
+		 		</td>
+		 	</tr>
+		 </table>
+	</div>
+
+	<div  id="sec_two" class="needOfBorder hide">
+		 <h1>This is CSS training part</h1>
+		 
+		 <table id="cssTable">
+		 	<tr> <!-- Transformation (3D effect) -->
+		 		<td class="codePart">
+		 			Main idea:<br>
+		 			<ul>
+		 				<li>create 3 div elements (for comfort put them in one div);</li>
+		 				<li>use css to transform (use -webkit and -moz for different browsers);</li>
+		 				<li>do 'little' math;</li>
+		 				<li>add shadings for 3D view.</li>
+		 			</ul>
+		 			<p>
+					It would be complicated to place in correct place (pixel by pixel), because of div locations and transformations. Here solved with margin.<br>
+					P.S. - code is a bit different from real picture.
+					</p>
+		 			
+			 		<button id="css_more1-show" type="button" onclick="showHide('css_more1');return false;">Show all the code!</button>
+		 			<button id="css_more1-hide" type="button" onclick="showHide('css_more1');return false;" class="hide">Too much code!!!</button>
+			 		<p id="css_more1" class="hide">
+			 		.cube {<br>position: relative;<br>top: 200px;<br>}<br>.rightFace, .leftFace, .topFace div {<br>padding: 10px;
+			 		<br>width: 180px;<br>height: 180px;<br>}<br>.rightFace, .leftFace, .topFace {<br>position: absolute;<br>}
+			 		<br>.leftFace {<br>	-webkit-transform: skewY(30deg);<br>background-color: #ccc;<br>}<br>.rightFace {
+			 		<br>-webkit-transform: skewY(-30deg);<br>background-color: #ddd;<br>left: 200px;<br>}<br>.topFace div {
+			 		<br>-webkit-transform: skewY(-30deg) scaleY(1.16);<br>background-color: #eee;<br>font-size: 0.862em;<br>}
+			 		<br>.topFace {<br>-webkit-transform: rotate(60deg);<br>top: -158px;<br>left: 100px;<br>}
+			 		</p>
+		 		</td>
+		 		<td class="drawPart">
+		 			<div class="cube">
+					    <div class="topFace">
+					        <div> Content</div>
+					    </div>
+					    <div class="leftFace"> Content</div>
+					    <div class="rightFace"> Content</div>
+					</div>
+					<p>
+					More about 2D transforms <a href="http://www.w3schools.com/css3/css3_2dtransforms.asp">in w3schools webpage</a>.
+					About 3D transforms <a href="http://www.w3schools.com/css3/css3_3dtransforms.asp">in w3schools webpage</a>.
+					</p>
+		 		</td>
+		 	</tr>		 	
+		 </table>
+		 
+	</div>
+	
+	<div  id="sec_three" class="needOfBorder hide">
+		 <h1>This is JavaScript training part</h1>
+		 
+		 <table id="javaTable">
+		 	<tr> <!-- Simple function -->
+		 		<td class="codePart">
+			 		<p>
+			 		function f1() {<br>var foo = 1;<br>function bar() {<br>if (!foo) {<br>var foo = 10;<br>}
+			 		<br>alert(foo);<br>}<br>bar();<br>}
+			 		</p>
+		 		</td>
+		 		<td class="buttonPart">
+		 			<button type="button" onclick="f1()">This is F1</button>
+		 			<p>This function returns number "10"</p>
+		 		</td>
+		 	</tr>		 			 		
+		 </table>
+	</div>
+</section>
+
+<div id="copyright">
+		<table>
+			<tr>
+				<td><img src="img/minidino.png" alt="dino"/></td>
+			</tr>
+			<tr>
+				<td>&#169; 2013 Eklēram patīk autortiesības</td>
+			</tr>
+		</table>
+	</div>
+
+<footer class="needOfBorder">
+	<a href="http://www.w3schools.com/"><span class="navi">|</span> W3Schools <span class="navi">|</span></a>
+	<a href="http://www.huecode.com/"><span class="navi">|</span> Hue Code <span class="navi">|</span></a>
+	<a href="http://caniuse.com/"><span class="navi">|</span> Can I use <span class="navi">|</span></a>
+	<a href="http://html5.validator.nu/"><span class="navi">|</span> Validator <span class="navi">|</span></a>
+</footer>
+</body>
+</html>
