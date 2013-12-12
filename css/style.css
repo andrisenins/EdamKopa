@@ -27,14 +27,58 @@
 .leftFloat{
 	float: left;
 }
+/*Background*/
+body{
+background: url('img/bg/bg-1.jpg') no-repeat fixed center; 
+animation: ican 100s;
+animation-iteration-count: infinite;
+-webkit-animation: ican 100s; /* Safari and Chrome */
+-webkit-animation-iteration-count: infinite;
+}
+@keyframes:hover ican{
+0% {background: url('img/bg/bg-1.jpg') no-repeat fixed center;}
+10% {background: url('img/bg/bg-1.jpg') no-repeat fixed center;}
+14% {background: url('img/bg/bg-2.jpg') no-repeat fixed center;}
+24% {background: url('img/bg/bg-2.jpg') no-repeat fixed center;}
+28% {background: url('img/bg/bg-3.jpg') no-repeat fixed center;}
+38% {background: url('img/bg/bg-3.jpg') no-repeat fixed center;}
+42% {background: url('img/bg/bg-4.jpg') no-repeat fixed center;}
+52% {background: url('img/bg/bg-4.jpg') no-repeat fixed center;}
+56% {background: url('img/bg/bg-5.jpg') no-repeat fixed center;}
+66% {background: url('img/bg/bg-5.jpg') no-repeat fixed center;}
+70% {background: url('img/bg/bg-6.png') no-repeat fixed center;}
+80% {background: url('img/bg/bg-6.png') no-repeat fixed center;}
+84% {background: url('img/bg/bg-7.jpg') no-repeat fixed center;}
+96% {background: url('img/bg/bg-7.jpg') no-repeat fixed center;}
+100% {background: url('img/bg/bg-1.jpg') no-repeat fixed center;}
+}
+@-webkit-keyframes ican { /* Safari and Chrome */
+0% {background: url('img/bg/bg-1.jpg') no-repeat fixed center;}
+10% {background: url('img/bg/bg-1.jpg') no-repeat fixed center;}
+14% {background: url('img/bg/bg-2.jpg') no-repeat fixed center;}
+24% {background: url('img/bg/bg-2.jpg') no-repeat fixed center;}
+28% {background: url('img/bg/bg-3.jpg') no-repeat fixed center;}
+38% {background: url('img/bg/bg-3.jpg') no-repeat fixed center;}
+42% {background: url('img/bg/bg-4.jpg') no-repeat fixed center;}
+52% {background: url('img/bg/bg-4.jpg') no-repeat fixed center;}
+56% {background: url('img/bg/bg-5.jpg') no-repeat fixed center;}
+66% {background: url('img/bg/bg-5.jpg') no-repeat fixed center;}
+70% {background: url('img/bg/bg-6.png') no-repeat fixed center;}
+80% {background: url('img/bg/bg-6.png') no-repeat fixed center;}
+84% {background: url('img/bg/bg-7.jpg') no-repeat fixed center;}
+96% {background: url('img/bg/bg-7.jpg') no-repeat fixed center;}
+100% {background: url('img/bg/bg-1.jpg') no-repeat fixed center;}
+}
 
 /*Navigation*/
 
 #navigator{
-	top: 20px;
-	margin: 20px auto;
-	width:80%;
-	background-color: #e7ffb3;
+	margin: 0px auto;
+	width:60%;
+	height:100px;
+	background-color: #949494;
+	border-bottom-right-radius: 80%;
+	border-bottom-left-radius: 80%;
 }
 
 #navigator a{
@@ -44,10 +88,6 @@
 	text-transform: uppercase;
     color: #675b5b;
     font-weight: 900;
-}
-
-#navigator div{
-	margin-right: 20px;
 }
 
 #navigator #logo{
@@ -86,24 +126,6 @@ p{
 	margin-left: 0.5%;
 }
 
-
-/* Footer */
-
-footer{
-	margin: 10px auto;
-	width: 80%;
-	background-color: #e7ffb3;
-}
-
-footer a{
-	text-decoration:none;
-}
-
-footer a:hover{
-	text-decoration:underline;
-}
-
-
 /*JavaScript side*/
 
 button{
@@ -127,36 +149,39 @@ button:hover{
 	background-color: rgba(167,208,67,0.4) ;
 }
 
-.raphaeldiv{
-	width: 100px;
-	height: 100px;
-	float: left;
-}
-
-.raphaelbigdiv{
-	border: 3px solid gainsboro;
-	border-radius: 3px;
-	width: 500px;
-	height: 250px;
-	float: left;
-}
-
 /*** FOOTER ***/
+footer{
+	margin: 0% 10%;
+	width: 80%;
+	bottom:0px;
+	position:absolute;
+	height:5%;
+	text-align: center;
+	color:white
+}
+
+footer .spanline{
+	color: white;
+	font-weight: 900;
+	margin: 0% 1%;
+}
+
 #copyright{
 	position: fixed;
 	bottom: 0px;
-	right: 10px;
+	right: 1%;
 	z-index: -999;
+	font-size: 70%;
 }
 
 #copyright table{
 	margin:auto;
 	clear:both;
 	text-align:center;
-	width: 200px;
+	width: 60%;
 	}	
 #copyright td, tr{
 	color:YellowGreen;
-	padding:0px;
+	padding:0%;
 	border-style: none;
 	}
