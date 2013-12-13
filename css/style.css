@@ -1,12 +1,14 @@
 @CHARSET "utf-8";
 
-@import url(http://fonts.googleapis.com/css?family=Ubuntu);
-@import url(http://fonts.googleapis.com/css?family=Patrick+Hand);
+@import url(http://fonts.googleapis.com/css?family=Alegreya+Sans+SC:100,300,400,500,700,800,900,100italic,300italic,400italic,500italic,700italic,800italic,900italic|Exo+2:400,100,100italic,200italic,200,300,300italic,400italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic&subset=latin,latin-ext,cyrillic);
 
-
+/*
+font-family: 'Alegreya Sans SC', sans-serif;
+font-family: 'Exo 2', sans-serif;
+*/
 /* ALL */
 *{
-	font-family: 'Patrick Hand', cursive;
+	font-family: 'Exo 2', sans-serif;
 	font-weight:normal;
 	font-size: 100%;
 	color: black;
@@ -18,6 +20,10 @@
 
 .needOfBorder2{
 	border: 1px dotted red;
+}
+
+.minheight{
+	height:200px;
 }
 
 .hide{
@@ -70,28 +76,34 @@ animation-iteration-count: infinite;
 100% {background: url('img/bg/bg-1.jpg') no-repeat fixed center;}
 }
 
+
 /*Navigation*/
 
 #navigator{
 	margin: 0px auto;
 	width:60%;
-	height:100px;
-	background-color: #949494;
-	border-bottom-right-radius: 80%;
-	border-bottom-left-radius: 80%;
+	margin-bottom: 5%;
 }
 
-#navigator a{
-	margin: 0px 20px;
+#one, #two, #three{
+	margin: 0% 2%;
+	padding: 1%;
 	text-decoration: none;
-	font-family: 'Ubuntu', sans-serif;
+	font-family: 'Alegreya Sans SC', sans-serif;
 	text-transform: uppercase;
-    color: #675b5b;
+    color: white;
     font-weight: 900;
+	float: right;
+	background: rgba(0,0,0, 0.8);
+}
+#one:hover, #two:hover, #three:hover{
+    color: black;
+	background: rgba(255,255,255, 0.8);
 }
 
-#navigator #logo{
-	
+#logo img{
+	display:block;
+	margin: auto;
 }
 
 /*Section*/
@@ -99,7 +111,6 @@ animation-iteration-count: infinite;
 section{
 	margin: 20px auto;
 	width: 80%;
-	background-color: gainsboro;
 	min-height:100px;
 }
 
@@ -124,6 +135,8 @@ p{
 	width: 49%;
 	margin:auto;
 	margin-left: 0.5%;
+	background-color: rgba(255,255,255, 0.8);
+	border-radius:3%;
 }
 
 /*JavaScript side*/
