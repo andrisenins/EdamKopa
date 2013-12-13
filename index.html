@@ -7,28 +7,29 @@
 	<link rel="stylesheet" href="css/style.css">
 	<script type="text/javascript" src="js/js.js"></script> <!-- page navigation functions -->
 	<script type="text/javascript" src="js/jquery-1.7.2.min.js"></script> <!-- Library -->
-	<script type="text/javascript" src="js/raphael-library.js"></script> <!-- Raphael library -->
-	<script type="text/javascript" src="js/easeljs-0.5.0.min.js"></script> <!-- Createrjs Easeljs library -->
-    <script type="text/javascript" src="js/onloadjs.js"></script> <!-- Window.onload function -->
 </head>
 
 <body>
 
-<nav id="navigator" class="needOfBorder2">
-	<div id="logo" class="needOfBorder">
+<nav id="navigator">
+	<div id="logo">
 		<a onclick="openmenu('one');return false;"> <img src="css/img/logo.png" alt="logo"/></a>
 	</div>
 	
-	<a href="#one" id="one" class="needOfBorder" onclick="openmenu('one');return false;">Receptes</a>
-	<a href="#two" id="two" class="needOfBorder" onclick="openmenu('two');return false;">Pieslēgties</a>
-	<a href="#three" id="three" class="needOfBorder" onclick="openmenu('three');return false;">Reģistrēties</a>
+	<a href="#one" id="one" onclick="openmenu('one');return false;">Receptes</a>
+	<a id="logpop" onclick="logpop();return false;">Pieslēgties</a>
+	<a href="#two" id="two" onclick="openmenu('two');return false;">Reģistrēties</a>
 </nav>
 
-<section class="needOfBorder2">
+<div  id="sec_logpop" class="hide">
+		 <h1>PoP!</h1>
+		
+	</div>
 
-	<div  id="sec_one" class="needOfBorder">
-		 <h1>Receptes</h1>
-		 <div id="sec_one_1" class="sectionParting leftFloat minheight">
+<section>
+
+	<div  id="sec_one">
+		<div id="sec_one_1" class="sectionParting leftFloat minheight">
 			Jaunākās receptes
 		 
 		</div>
@@ -38,14 +39,12 @@
 		</div>
 	</div>
 
-	<div  id="sec_two" class="needOfBorder hide">
-		 <h1>Second</h1>
+	<div  id="sec_two" class="hide" class="sectionParting needOfBorder">
+		 <div id="sec_two_1" class="sectionParting minheight">
+			Jaunākās receptes
 		 
-	</div>
-	
-	<div  id="sec_three" class="needOfBorder hide">
-		 <h1>Third</h1>
-		
+		</div>
+		 
 	</div>
 </section>
 

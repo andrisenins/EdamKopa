@@ -5,7 +5,7 @@ function openmenu(id) {
     return;
   }
 
-  var items = ["one", "two", "three"];
+  var items = ["one", "two"];
 
   if (items.indexOf(id) == -1) {
     return;
@@ -28,51 +28,14 @@ function openmenu(id) {
   return false;
 }
 
-function showHide(shID) {
-  if (document.getElementById(shID)) {
-    if (document.getElementById(shID + '-show').style.display != 'none') {
-      document.getElementById(shID + '-show').style.display = 'none';
-      document.getElementById(shID + '-hide').style.display = 'inline';
-      document.getElementById(shID).style.display = 'block';
-    } else {
-      document.getElementById(shID + '-show').style.display = 'inline';
-      document.getElementById(shID + '-hide').style.display = 'none';
-      document.getElementById(shID).style.display = 'none';
-    }
-  }
+function logpop() {
+	if(document.getElementById('sec_logpop').style.display == 'inline'){
+			document.getElementById('sec_logpop').style.display = 'none';
+			console.log('if');
+	}
+	else{
+		document.getElementById('sec_logpop').style.display = 'inline';
+		console.log('else');
+	}
 }
 
-function changeShow(shID, hdID) {
-  document.getElementById(hdID).style.display = 'none';
-  document.getElementById(hdID + '-button').style.display = 'none';
-  document.getElementById(shID).style.display = 'inline';
-  document.getElementById(shID + '-button').style.display = 'inline';
-}
-
-var topPos;
-var updatedPos;
-window.onscroll = navPos;
-if (!topPos) {
-  topPos = 10;
-}
-function navPos() {
-  var pos = window.scrollY;
-  if (!topPos) {
-    topPos = 10;
-  }
-  var navi = document.getElementById('flyNavigatorFly');
-  if (navi) {
-    if (pos < topPos && updatedPos != 'absolute') {
-      navi.style.position = 'absolute';
-      navi.style.top = topPos + 'px';
-      updatedPos = 'absolute';
-    } else if (pos >= topPos && updatedPos != 'fixed') {
-      navi.style.position = 'fixed';
-      navi.style.top = '0';
-      updatedPos = 'fixed';
-    }
-    ;
-  }
-  ;
-}
-navPos();
