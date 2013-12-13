@@ -17,14 +17,9 @@
 	</div>
 	
 	<a href="#one" id="one" onclick="openmenu('one');return false;">Receptes</a>
-	<a id="logpop" onclick="logpop();return false;">Pieslēgties</a>
+	<a id="logpop" onclick="logpop();return false;">Pieslēgties</a>	
 	<a href="#two" id="two" onclick="openmenu('two');return false;">Reģistrēties</a>
 </nav>
-
-<div  id="sec_logpop" class="hide">
-		 <h1>PoP!</h1>
-		
-	</div>
 
 <section>
 
@@ -39,7 +34,7 @@
 		</div>
 	</div>
 
-	<div  id="sec_two" class="hide" class="sectionParting needOfBorder">
+	<div  id="sec_two" class="hide" class="sectionParting">
 		 <div id="sec_two_1" class="sectionParting minheight">
 			Jaunākās receptes
 		 
@@ -63,4 +58,14 @@
 	Very important text <span class="spanline">|</span> Cookies <span class="spanline">|</span> Banana <span class="spanline">|</span> I need get laid
 </footer>
 </body>
+
+<div  id="sec_logpop" class="hide">		
+	<form id="login_form" method="post">
+		<input class="login_input" type="text" name="login" maxlength="20" value="" placeholder="Lietotājvārds"/>
+		<input class="login_input" type="password" name="password" maxlength="21" value="" placeholder="Parole"/>
+		<input id="login_submit" class="login_input" type="submit" name="submit" value="Ieiet"/>
+	</form>
+</div>
+
+<div id="logpop_overlay" class="hide" onclick="logpop();return false;"></div>
 </html>

@@ -29,13 +29,13 @@ function openmenu(id) {
 }
 
 function logpop() {
-	if(document.getElementById('sec_logpop').style.display == 'inline'){
+	if(document.getElementById('logpop_overlay').style.display == 'block'){
 			document.getElementById('sec_logpop').style.display = 'none';
-			console.log('if');
+			document.getElementById('logpop_overlay').style.display = 'none';
 	}
 	else{
 		document.getElementById('sec_logpop').style.display = 'inline';
-		console.log('else');
+		document.getElementById('logpop_overlay').style.display = 'block';
 	}
 }
 
