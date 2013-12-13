@@ -1,11 +1,11 @@
-var active = 'main';
+var active = 'one';
 
 function openmenu(id) {
   if (active == id) {
     return;
   }
 
-  var items = ["main", "one", "two", "three"];
+  var items = ["one", "two", "three"];
 
   if (items.indexOf(id) == -1) {
     return;
