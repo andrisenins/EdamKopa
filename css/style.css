@@ -95,8 +95,9 @@ animation-iteration-count: infinite;
 	border: none;
 }
 #one:hover, #two:hover, #logpop:hover{
-    color: black;
+    color: rgb(35,32,18);
 	background: rgba(255,255,255, 0.8);
+	cursor: pointer;
 }
 
 #logo img{
@@ -147,7 +148,7 @@ p{
 }
 
 #sec_two_1{
-	width: 85%;
+	width: 65%;
 	margin: auto;
 }
 
@@ -173,6 +174,11 @@ p{
 	content: '';
 	position: absolute;
 	display: block;
+}
+
+#sec_logpop a{
+	font-size: 70%;
+	margin: 0% 32%;
 }
 
 #logpop_overlay{
@@ -213,8 +219,124 @@ p{
 }
 
 #login_submit:hover{
-    color: black;
+    color: rgb(35,32,18);
 	background: rgba(255,255,255, 0.8);
+}
+
+/* Register settings */
+.reqstar{
+	size: 150%;
+	color: #c10606;
+	font-weight: 900;
+}
+
+.reg_input{
+	width: 22%;
+	margin: 1% 0.5% 1% 5%;
+	font-family: 'Alegreya Sans SC', sans-serif;
+	text-transform: uppercase;
+	border: 2px solid rgba(35,32,18, 0.6);
+	padding-left:3%;
+}
+
+.reg_input:-webkit-input-placeholder {
+    color: rgb(35,32,18);
+ }
+.reg_input:-moz-placeholder {
+    color: rgb(35,32,18);
+ }
+.reg_input:focus{
+    box-shadow: 0 1px 0 #232012 inset, 0 -1px 0 #232012 inset, 1px 0 0 #232012 inset, -1px 0 0 #232012 inset;
+    outline: none;
+ }
+ 
+#reg_submit, #reg_check{
+    color: white;
+    font-weight: 900;
+	background: rgba(35,32,18, 0.8);
+	padding:0%;
+}
+
+#reg_submit:hover, #reg_check:hover{
+    color: rgb(35,32,18);
+	background: rgba(255,255,255, 0.8);
+	cursor: pointer;
+}
+
+#reg_submit{
+	margin: 2% 38% 1%;
+}
+
+#reg_ok{
+	visibility: hidden;
+}
+
+#reg_checkbox{
+	position: relative;
+	margin-left:5%;
+	width: 70%;
+	font-family: 'Alegreya Sans SC', sans-serif;
+	text-transform: none;
+	border: none;
+}
+
+#reg_checkbox label {
+	cursor: pointer;
+	position: absolute;
+	width: 23px;
+	height: 23px;
+	top: 0;
+  	left: 0;
+	background: white;
+	border: 2px solid rgba(35,32,18, 0.6);
+}
+
+#reg_checkbox label:after {
+	opacity: 0.2;
+	content: '';
+	position: absolute;
+	width: 9px;
+	height: 5px;
+	background: transparent;
+	top: 5px;
+	left: 6px;
+	border: 3px solid rgb(35,32,18);
+	border-top: none;
+	border-right: none;
+
+	-webkit-transform: rotate(-45deg);
+	-moz-transform: rotate(-45deg);
+	-o-transform: rotate(-45deg);
+	-ms-transform: rotate(-45deg);
+	transform: rotate(-45deg);
+}
+
+#reg_ok:checked + label:after {
+	opacity: 1;
+}
+
+/*Register pop settings*/
+#sec_regpop{
+	position: fixed;
+	width:16%;
+	height:auto;
+	z-index: 30;
+	left: 42%;
+	top: 30%;
+	padding: 1%;
+	border: 5px solid rgba(35,32,18, 0.6);
+}
+
+#sec_regpop:after{
+	background-color: rgba(255,255,255, 0.9);
+	top: 0px;
+	bottom: 0px;
+	left: 0px;
+	right: 0px;
+	z-index: -1;
+	content: '';
+	position: absolute;
+	display: block;
 }
 
 /*** FOOTER ***/

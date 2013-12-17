@@ -31,10 +31,23 @@ function openmenu(id) {
 function logpop() {
 	if(document.getElementById('logpop_overlay').style.display == 'block'){
 			document.getElementById('sec_logpop').style.display = 'none';
+			document.getElementById('sec_regpop').style.display = 'none';
 			document.getElementById('logpop_overlay').style.display = 'none';
 	}
 	else{
 		document.getElementById('sec_logpop').style.display = 'inline';
+		document.getElementById('logpop_overlay').style.display = 'block';
+	}
+}
+
+function regpop() {
+	if(document.getElementById('logpop_overlay').style.display == 'block'){
+			document.getElementById('sec_regpop').style.display = 'none';
+			document.getElementById('sec_logpop').style.display = 'none';
+			document.getElementById('logpop_overlay').style.display = 'none';
+	}
+	else{
+		document.getElementById('sec_regpop').style.display = 'inline';
 		document.getElementById('logpop_overlay').style.display = 'block';
 	}
 }
